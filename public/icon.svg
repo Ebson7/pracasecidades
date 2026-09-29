@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="marsilBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2A4A" />
+      <stop offset="100%" stop-color="#07192C" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9E3D" />
+      <stop offset="100%" stop-color="#F28C28" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#marsilBg)" />
+
+  <!-- Inner Subtle Ring -->
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="#F28C28" stroke-width="4" stroke-opacity="0.25" />
+
+  <!-- Central Emblem with Safe Zone Padding (80% safe zone for maskable) -->
+  <g transform="translate(256, 230)" filter="url(#shadow)">
+    <!-- Stylized Marsil M -->
+    <path d="M -120 100 L -120 -80 L -30 30 L 0 -10 L 30 30 L 120 -80 L 120 100 L 70 100 L 70 -10 L 15 65 L -15 65 L -70 -10 L -70 100 Z" fill="url(#orangeGrad)" />
+    
+    <!-- Accent Dots / Route Nodes -->
+    <circle cx="-120" cy="-80" r="14" fill="#FFFFFF" />
+    <circle cx="120" cy="-80" r="14" fill="#FFFFFF" />
+    <circle cx="0" cy="-10" r="14" fill="#FFFFFF" />
+  </g>
+
+  <!-- Logistics Truck Bar at Bottom -->
+  <g transform="translate(146, 370)">
+    <rect x="0" y="0" width="220" height="34" rx="17" fill="#F28C28" fill-opacity="0.18" />
+    <text x="110" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="900" fill="#F28C28" text-anchor="middle" letter-spacing="4">
+      MARSIL
+    </text>
+  </g>
+</svg>

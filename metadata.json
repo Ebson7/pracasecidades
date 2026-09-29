@@ -1,0 +1,6 @@
+{
+  "name": "Marsil | Consulta de Praças",
+  "description": "Consulta rápida de praças, regiões, filiais e dias de carregamento para representantes comerciais (RCAs) da Marsil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
